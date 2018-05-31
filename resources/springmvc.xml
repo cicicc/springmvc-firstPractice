@@ -7,8 +7,11 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
-    <!--配置Controller扫描包-->
-    <context:component-scan base-package="com.afeng.springmvc.controller"/>
+    <!-- 扫描@Controler  @Service   -->
+    <context:component-scan base-package="com.afeng.springmvc"/>
+    <!--配置注解驱动-->
+    <mvc:annotation-driven/>
+
     <!--配置完前后缀以后 最终jsp物理地址 前缀+逻辑视图名+后缀-->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <!--配置逻辑视图的前缀-->
