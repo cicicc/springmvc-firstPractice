@@ -1,0 +1,2 @@
+# springmvc-firstPractice
+springmvc的练习项目,包括springmvc独立运行练习以及和mybatis整合练习
